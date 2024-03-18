@@ -11,6 +11,8 @@ public class Main {
         Aluno a5 = new Aluno();
         Aluno a6 = new Aluno();
         Aluno a7 = new Aluno();
+        Aluno a8 = new Aluno().;
+        Aluno a9 = new Aluno();
 
         a1.setNome("Glevson");
         a2.setNome("Francisco");
@@ -19,26 +21,34 @@ public class Main {
         a5.setNome("José");
         a6.setNome("Miguel");
         a7.setNome("Teste");
+        a8.setNome("Teste");
+        a9.setNome("Teste");
 
         System.out.println("\nAlunos: "+ a2.getNome());
         System.out.println("Alunos: "+ a1.getNome());
 
 
-        lista.Adiciona(a1);
-        lista.Adiciona(a2);
-        lista.Adiciona(a3);
-        lista.Adiciona(a4);
-        lista.Adiciona(a5);
-        lista.Adiciona(a6);
-        lista.Adiciona(a7);
-
-        System.out.println("Total de alunos: " +lista.getTotalDealunos());
-
+        lista.add(a1);
+        lista.add(a2);
+        lista.add(a3);
+        lista.add(a4);
+        lista.add(a5);
+        lista.add(a6);
+        lista.add(a7);
+        lista.add(a8);
+        lista.add(a9);
+        
+        System.out.println("Total de alunos: " +lista.siz());
         System.out.println(lista);
+        lista.remove(0);
+        lista.remove(2);
+        lista.remove(5);
+        lista.remove(8);
 
-        System.out.println(lista.contem(a7));
 
-        System.out.println(lista.pega(6));
+        System.out.println(lista.contem(a9));
+
+        System.out.println(lista.get(8));
 
 
     }
